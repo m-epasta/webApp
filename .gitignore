@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+echo '.env.local' >> .gitignore
+echo 'database.js' >> .gitignore
+echo "node_modules/" >> .gitignore
+echo '.env.production' >> .gitignore
+echo '.env' >> .gitignore
+echo '*.db' >> .gitignore
+echo 'decrypt.js' >> .gitignore
+echo 'decryptToFile' >> .gitignore
+echo '%decrypted_%.db' >> .gitignore
+echo 'app/api/database/' >> .gitignore
+
+app/api/database/database.js
+app/api/database/decrypt.js
