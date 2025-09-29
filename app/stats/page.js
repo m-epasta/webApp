@@ -32,6 +32,12 @@ const StatsPage = () => {
         };
     }, []);
 
+    const submitButton  = () => {
+        alert("API req sent");
+        const apiKey = document.querySelector(".API-input").ariaValueMax;
+        console.log(`API key entered: ${apiKey}`);
+    }
+
 
     return (
         <div className="appContainer">
@@ -55,6 +61,27 @@ const StatsPage = () => {
                         <p></p>
                     </li>
                 </ul>
+            </div>
+            <h2 className="subtitle"> Our API's keys to retrieve specific data!</h2>
+            <div id="container-specified-api-keys">
+                <ul id="desc-list">
+                    <li id="desc-item1" className="feature-card">
+                        <h3>Monthly users</h3>
+                        <p>key:  coming soon</p>
+                    </li>
+                    <li id="desc-item2" className="feature-card">
+                        <h3>Daily Users</h3>
+                        <p>key: coming soon</p>
+                    </li>
+                    <li id="desc-item3" className="feature-card">
+                        <h3>average user per country</h3>
+                        <p>key: coming soon</p>
+                    </li>
+                </ul>
+            </div>
+            <div className="API-input-container">
+                <input type="text" placeholder="Enter your API key" className="API-input" />
+                <button className="API-button" onClick={submitButton}>Submit</button>
             </div>
         </div>
     )
