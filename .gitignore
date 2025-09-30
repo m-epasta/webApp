@@ -53,3 +53,4 @@ echo 'app/api/database/' >> .gitignore
 
 app/api/database/database.js
 app/api/database/decrypt.js
+app/api/database/TreatedDatabase.js
